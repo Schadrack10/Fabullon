@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from "react";
 import { Box } from "@mui/material";
+import AboutSection from '../components/AboutSection';
 
 export default function Home() {
   useEffect(() => {
@@ -12,7 +13,7 @@ export default function Home() {
   }, []);
   return (
     <Box>
-
+      <AboutSection />
 
 
     </Box>
