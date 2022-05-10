@@ -8,6 +8,7 @@ import YellowDot from "./YellowDot";
 const AboutSection = () => {
   return (
     <Box
+      id="about"
       style={{
         padding: 8,
         width: "100%",
@@ -24,26 +25,25 @@ const AboutSection = () => {
     >
       <Typography
         align="left"
-        sx={{
-          fontSize: "20px",
-          fontWeight: "400",
+        variant="h5"
+        style={{
+          fontWeight: 100,
           marginBottom: "60px",
           width: "85%",
-          // mr:'50px'
         }}
       >
         ABOUT US
       </Typography>
 
-      <Box sx={{ mt: 4, fontSize: "11px", width: "90%", mb: 2 }}>
+      <Box sx={{ mt: 4, width: "90%", mb: 2 }}>
         <Grid container spacing={2} columns={12}>
           <Grid
             xs={12}
             md={3}
-            sx={{ padding: "0 20px", mt: 2, display: "flex" }}
+            sx={{ padding: "0 20px", mt: 2, display: "flex"}}
           >
             <YellowDot />
-            <Typography>
+            <Typography sx={{fontSize: "15px",fontWeight:'100'}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s
@@ -55,7 +55,7 @@ const AboutSection = () => {
             sx={{ padding: "0 20px", mt: 2, display: "flex" }}
           >
             <YellowDot />
-            <Typography>
+            <Typography sx={{fontSize: "15px"}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s
@@ -67,7 +67,7 @@ const AboutSection = () => {
             sx={{ padding: "0 20px", mt: 2, display: "flex" }}
           >
             <YellowDot />
-            <Typography>
+            <Typography sx={{fontSize: "15px"}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s
@@ -79,7 +79,7 @@ const AboutSection = () => {
             sx={{ padding: "0 20px", mt: 2, display: "flex" }}
           >
             <YellowDot />
-            <Typography>
+            <Typography sx={{fontSize: "15px"}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s
