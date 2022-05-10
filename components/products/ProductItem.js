@@ -6,7 +6,6 @@ import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import CloseIcon from "@mui/icons-material/Close";
 import { Box, Typography, Stack, Divider, Grid } from "@mui/material";
-import { rgbToHex } from "@mui/material";
 
 function RenderProductDescription({ productDescription }) {
   if (productDescription) {
@@ -31,14 +30,11 @@ const style = {
   width: {
     xs: "80%",
   },
-  maxwidth:{
-      xs:'300px'
+  maxHeight:{
+    xs:'85vh',
+    lg:'auto'
   },
-  maxHeight: {
-    xs: 'auto',
-    lg: 'auto'
-  },
-  bgcolor: "rgb(237, 236, 235)",
+  bgcolor: "blue",
   boxShadow: 24,
   p: 4,
 };
@@ -57,28 +53,27 @@ export default function ProductItem({
 
   return (
     <div>
-      <Button sx={{ '&:hover': { background: "white" } }}>
-
+      <Button sx={{'&:hover':{background:"white"}}} onClick={handleOpen}>
         <Box
           sx={{
             height: "100%",
             border: "1px solid rgba(1,1,1,0.1)",
-            borderRadius: '10px',
+            borderRadius:'10px',
             color: "rgba(1,1,1,0.5)",
             fontWeight: "900",
             maxHeight: "370px",
             height: "370px",
-            background: '',
-            margin: '0 5px',
+            background:'',
+            margin:'0 5px',
             width: {
               xs: "300px",
-              sm: "300px",
+              sm:"300px",
               md: "315px",
             },
             minHeight: "220px",
             display: "flex",
             flexDirection: "column",
-            padding: "0px",
+            padding: "8px",
             textAlign: "center",
             "&:hover": {
               // border: "1px solid #ef8729",
@@ -87,55 +82,37 @@ export default function ProductItem({
             },
           }}
         >
-          <Box sx={{ width: '100%', height: '15%', background: 'rgb(237, 236, 235)', borderRadius: '10px 10px 0 0',  }} x>
-            <Button onClick={handleOpen}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-              </svg>
-            </Button>
-          </Box>
-          <Box sx={{ background: '#fff', margin: "0 auto", height: '60%', width:'100%' }}>
-
-            <img
-              src={currentImg}
-              alt=""
-              style={{
-                height: "65%",
-                objectFit: "contain",
-                border: '1px solid red',
-                padding: "32px",
-
-              }}
-            />
-          </Box>
-          {/* <Divider
+          <img
+            src={currentImg}
+            alt=""
+            style={{
+              height: "65%",
+              objectFit: "contain",
+              padding: "32px",
+              margin: "0 auto",
+            }}
+          />
+          <Divider
             sx={{
               "&:hover": {
                 background: "#ef8729",
               },
             }}
-          /> */}
+          />
           <Stack
             sx={{
               padding: "0 8px",
-              minHeight: "25%",
+              marginTop: "8px",
+              minHeight: "30%",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              background: 'rgb(237, 236, 235)',
-              borderRadius: '0 0 10px 10px '
-
             }}
           >
             <Typography noWrap={false} variant="p">{productName} </Typography>
           </Stack>
         </Box>
       </Button>
-
-
-
-
-
 
       <Modal
         aria-labelledby="transition-modal-title"

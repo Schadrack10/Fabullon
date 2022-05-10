@@ -156,7 +156,54 @@ export const productsArr = [
   },
 
 
-  
+  {
+    name: "Pro-Wrap",
+    category: "Safety Eyewear",
+    image: "img16.png",
+    description: [
+      "With Anti-Scratch & Anti-UV Protection",
+      "Polycarbonate Lense & Side Shields",
+      "PP Frame",
+      "Adjustable Temple Arns - 4 Step Adjustment",
+      "Available in Clear, Amber 7 Dark",
+    ],
+  },
+  {
+    name: "Pro-Wrap",
+    category: "Safety Eyewear",
+    image: "img16.png",
+    description: [
+      "With Anti-Scratch & Anti-UV Protection",
+      "Polycarbonate Lense & Side Shields",
+      "PP Frame",
+      "Adjustable Temple Arns - 4 Step Adjustment",
+      "Available in Clear, Amber 7 Dark",
+    ],
+  },
+  {
+    name: "Pro-Wrap",
+    category: "Safety Eyewear",
+    image: "img16.png",
+    description: [
+      "With Anti-Scratch & Anti-UV Protection",
+      "Polycarbonate Lense & Side Shields",
+      "PP Frame",
+      "Adjustable Temple Arns - 4 Step Adjustment",
+      "Available in Clear, Amber 7 Dark",
+    ],
+  },
+    {
+    name: "Pro-Wrap",
+    category: "Safety Eyewear",
+    image: "img16.png",
+    description: [
+      "With Anti-Scratch & Anti-UV Protection",
+      "Polycarbonate Lense & Side Shields",
+      "PP Frame",
+      "Adjustable Temple Arns - 4 Step Adjustment",
+      "Available in Clear, Amber 7 Dark",
+    ],
+  },
 
 
 
