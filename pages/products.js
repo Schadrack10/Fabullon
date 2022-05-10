@@ -82,11 +82,12 @@ export default function Products() {
       </Box>
 
       <Typography
-        variant="h3"
+        variant="h4"
+        
         component="div"
         gutterBottom
         align="center"
-        color="blue"
+
         style={{ fontWeight: "600" }}
       >
         {filterChoice}

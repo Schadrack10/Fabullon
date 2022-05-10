@@ -13,7 +13,6 @@ export default function Products() {
       sx={{
         minHeight: "100vh",
         width: "100%",
-        background:'coral',
         padding: "16px 80px",
         display: "flex",
         flexDirection: "column",
