@@ -56,7 +56,7 @@ export default function Products() {
           },
         }}
       >
-        <Typography variant="h2\5">Filter by :</Typography>
+        <Typography sx={{fontWeight:'light', fontFamily:'monospace'}} fontSize="22px" variant="h5">Filter by :</Typography>
         <Select value={filterChoice} onChange={handleFilterChange}>
           <MenuItem value="">{"All"}</MenuItem>
           {Catergories.map((cat, index) => {
