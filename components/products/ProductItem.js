@@ -107,7 +107,7 @@ export default function ProductItem({
               style={{
                 height: "65%",
                 objectFit: "contain",
-                border: '1px solid red',
+                // border: '1px solid red',
                 padding: "32px",
 
               }}

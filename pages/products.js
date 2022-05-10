@@ -83,12 +83,12 @@ export default function Products() {
 
       <Typography
         variant="h4"
-        
+         
         component="div"
         gutterBottom
         align="center"
 
-        style={{ fontWeight: "600" }}
+        sx={{ fontWeight: "300", fontFamily:'monospace', letterSpacing:'0px' }}
       >
         {filterChoice}
       </Typography>
