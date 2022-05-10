@@ -87,7 +87,7 @@ export default function ProductItem({
             },
           }}
         >
-          <Box sx={{ width: '100%', height: '15%', background: 'rgb(237, 236, 235)', borderRadius: '10px 10px 0 0',  }} x>
+          <Box sx={{ width: '100%', height: '15%', background: 'rgb(237, 236, 235)', borderRadius: '10px 10px 0 0', display:'flex', justifyContent:"flex-end" }} x>
             <Button onClick={handleOpen}>
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                 <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
@@ -108,13 +108,13 @@ export default function ProductItem({
               }}
             />
           </Box>
-          {/* <Divider
+          <Divider
             sx={{
               "&:hover": {
                 background: "#ef8729",
               },
             }}
-          /> */}
+          />
           <Stack
             sx={{
               padding: "0 8px",
