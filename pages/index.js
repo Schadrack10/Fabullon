@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from "react";
 import { Box } from "@mui/material";
-import AboutSection from '../components/AboutSection';
+import AboutSection from '../components/about/AboutSection';
 
 export default function Home() {
   useEffect(() => {
