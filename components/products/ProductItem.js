@@ -31,15 +31,20 @@ const style = {
   width: {
     xs: "80%",
   },
+  
   maxwidth:{
       xs:'300px'
   },
+  fontSize:{
+     xs:'1px'
+  },
   maxHeight: {
-    xs: 'auto',
+    xs: '450px',
     lg: 'auto'
   },
   bgcolor: "rgb(237, 236, 235)",
   boxShadow: 24,
+  borderRadius:'20px',
   p: 4,
 };
 
@@ -57,7 +62,7 @@ export default function ProductItem({
 
   return (
     <div>
-      <Button sx={{ '&:hover': { background: "white" } }}>
+      <Box sx={{ '&:hover': {   background:'rgb(242, 242, 242)', background:'#fff' } }}>
 
         <Box
           sx={{
@@ -69,7 +74,7 @@ export default function ProductItem({
             maxHeight: "370px",
             height: "370px",
             background: '',
-            margin: '0 5px',
+            margin: '20px 5px',
             width: {
               xs: "300px",
               sm: "300px",
@@ -87,7 +92,7 @@ export default function ProductItem({
             },
           }}
         >
-          <Box sx={{ width: '100%', height: '15%', background: 'rgb(237, 236, 235)', borderRadius: '10px 10px 0 0', display:'flex', justifyContent:"flex-end" }} x>
+          <Box sx={{ width: '100%', height: '15%', background: 'rgb(242, 242, 242)', borderRadius: '10px 10px 0 0', display:'flex', justifyContent:"flex-end" }} x>
             <Button onClick={handleOpen}>
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                 <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
@@ -122,7 +127,7 @@ export default function ProductItem({
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              background: 'rgb(237, 236, 235)',
+              background: 'rgb(242, 242, 242)',
               borderRadius: '0 0 10px 10px '
 
             }}
@@ -130,7 +135,7 @@ export default function ProductItem({
             <Typography noWrap={false} variant="p">{productName} </Typography>
           </Stack>
         </Box>
-      </Button>
+      </Box>
 
 
 
@@ -198,10 +203,10 @@ export default function ProductItem({
               >
                 <h1
                   style={{
-                    fontSize: "24px",
+                    fontSize: "20px",
                   }}
                 >
-                  Description
+                  About The Product
                 </h1>
                 <Typography
                   gutterBottom

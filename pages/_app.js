@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
         <PageHead />
         {/* <NavBar /> */}
         <Component {...pageProps} />
-        {/* <Footer /> */}
+        <Footer />
       </SnackbarProvider>
     </>
   );

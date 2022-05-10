@@ -33,7 +33,8 @@ export default function Products() {
       sx={{
         minHeight: "100vh",
         width: "100%",
-        // background:'#cecece',
+        // background:'rgb(242, 242, 242)',
+        background:'#fff',
         padding: {
           xs: "16px 40px",
           md: "16px 60px",

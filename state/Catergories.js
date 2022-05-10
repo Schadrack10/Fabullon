@@ -6,22 +6,5 @@ export const Catergories = [
     "Flint Lighter",
     "Nozzle Cleaner" ,
     "Safety Eyewear" ,
-    "Magnetic Arrows" ,
-    "Welding Screens" ,
-    "Welding Lenses" ,
-    "Electrodes" ,
-    "Tungsten Electrodes" ,
-    "Gas Welding Equipment" ,
-    "Cable Set" ,
-    "Flow Meters" ,
-    "Dinse Connectors" ,
-    "Machine Panel Sockets" ,
-    "Hose" ,
-    "Welding Inverters" ,
-    "Javweld HE Series" ,
-    "Gudetek Inverter Battery Charges" ,
-    "Mig Machines" ,
-    "Plasma Cutters" ,
-    "Plasma Torches" ,
-    "Harris"
+
   ]
