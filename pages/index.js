@@ -1,12 +1,20 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import navBar from '../components/navBar'
+import { useEffect } from "react";
+import { Box } from "@mui/material";
 
 export default function Home() {
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
-    <div className={styles.container}>
-      <navBar />
-    </div>
+    <Box>
+
+
+
+    </Box>
   )
 }
