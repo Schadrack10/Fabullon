@@ -42,7 +42,7 @@ const style = {
     xs: '450px',
     lg: 'auto'
   },
-  bgcolor: "rgb(237, 236, 235)",
+  bgcolor: "#fff",
   boxShadow: 24,
   borderRadius:'20px',
   p: 4,
@@ -102,7 +102,7 @@ export default function ProductItem({
           <Box sx={{ background: '#fff', margin: "0 auto", height: '60%', width:'100%' }}>
 
             <img
-              src={currentImg}
+              src=""
               alt=""
               style={{
                 height: "65%",
