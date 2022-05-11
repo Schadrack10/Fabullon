@@ -50,7 +50,7 @@ const SaviorsOfDreams = () => {
                 flexDirection: "row",
               }}
             >
-              <Box sx={{background:'#ef8729', height:'150px',minWidth:'170px',display:'flex',justifyContent:'center',alignItems:'center',flexDirection: "column",mr:4}}>
+              <Box sx={{background:'#fcc200', height:'150px',minWidth:'170px',display:'flex',justifyContent:'center',alignItems:'center',flexDirection: "column",mr:4}}>
                 <span style={{fontSize:'14px',color:'#fff'}}>Our Vision</span>
                 <span style={{fontSize:'25px',color:'#fff'}}>Comfort</span>
                 <span style={{fontSize:'14px',color:'#fff'}}>where impossible</span>
@@ -93,7 +93,7 @@ const SaviorsOfDreams = () => {
                 flexDirection: "row",
               }}
             >
-              <Box sx={{background:'#ef8729', height:'150px',minWidth:'170px',display:'flex',justifyContent:'center',alignItems:'center',flexDirection: "column",mr:4}}>
+              <Box sx={{background:'#fcc200', height:'150px',minWidth:'170px',display:'flex',justifyContent:'center',alignItems:'center',flexDirection: "column",mr:4}}>
                 <span style={{fontSize:'14px',color:'#fff'}}>Our Vision</span>
                 <span style={{fontSize:'25px',color:'#fff'}}>Comfort</span>
                 <span style={{fontSize:'14px',color:'#fff'}}>where impossible</span>
@@ -133,7 +133,7 @@ const SaviorsOfDreams = () => {
                 flexDirection: "row",
               }}
             >
-              <Box sx={{background:'#ef8729', height:'150px',minWidth:'170px',display:'flex',justifyContent:'center',alignItems:'center',flexDirection: "column",mr:4}}>
+              <Box sx={{background:'#fcc200', height:'150px',minWidth:'170px',display:'flex',justifyContent:'center',alignItems:'center',flexDirection: "column",mr:4}}>
                 <span style={{fontSize:'14px',color:'#fff'}}>Our Vision</span>
                 <span style={{fontSize:'25px',color:'#fff'}}>Comfort</span>
                 <span style={{fontSize:'14px',color:'#fff'}}>where impossible</span>
