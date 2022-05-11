@@ -3,8 +3,8 @@ import { Box, Button, Grid, Typography, useMediaQuery } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import SendIcon from "@mui/icons-material/Send";
 import { useSnackbar } from "notistack";
-// import axios from "axios";
-// import { GooSpinner } from "react-spinners-kit";
+import axios from "axios";
+import { GooSpinner } from "react-spinners-kit";
 
 const ContactUs = () => {
   const minWidth600px = useMediaQuery("(min-width:600px)");
@@ -37,7 +37,7 @@ const ContactUs = () => {
       });
       setIsProcessing(false);
     } else {
-      fetch
+      axios
         .post("/api/email", {
           cell: form.number,
           email: form.email,
@@ -130,32 +130,21 @@ const ContactUs = () => {
 
             <Button
                 sx={{
-                  background: "gold !important",
+                  background: "#ef8729 !important",
                   borderRadius: 0,
                   paddingLeft: "18px",
                   mt: 4,
                   pr: 2,
                   color: "#fff",
-                  pointerEvents: processing ? "none" : "auto",
-                  opacity: processing ? 0.8 : 1,
+                  // pointerEvents: processing ? "none" : "auto",
+                  // opacity: processing ? 0.8 : 1,
                   height: "38px",
                   width: "132px",
                 }}
                 size="small"
                 color="secondary"
               >
-                {processing ? (
-                  <>
-                    VIEWING MAP
-                    <Box sx={{ ml: 1 }}>
-                      {/* <GooSpinner size={30} color="#fff" loading={true} /> */}
-                    </Box>
-                  </>
-                ) : (
-                  <>
-                    VIEW MAP
-                  </>
-                )}
+                 VIEW MAP
               </Button>
           </Box>
         </Grid>
@@ -172,7 +161,7 @@ const ContactUs = () => {
               background: "#fff",
               boxShadow: 2,
               pb: 4,
-              border:'7px solid gold'
+              border:'7px solid #ef8729'
             }}
           >
             

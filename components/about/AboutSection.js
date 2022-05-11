@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { Typography } from "@mui/material";
+import { Typography, Stack} from "@mui/material";
 import YellowDot from "./YellowDot";
 // import { SectionHeader } from "../../utils";
 
@@ -10,19 +10,35 @@ const AboutSection = () => {
     <Box
       id="about"
       style={{
-        padding: 8,
+        // padding: 8,
         width: "100%",
-        background: "black",
-
+        backgroundImage:`url("./about(1).jpeg")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         color: "white",
         marginTop: 70,
-        padding: "130px 0px",
+        // padding: "130px 0px",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
       }}
     >
+      <Stack sx={{
+                height: "570px",
+                width: "100%",
+                // padding: 8,
+                padding: "130px 0",
+                background:
+                  "linear-gradient(to bottom,rgba(0,0,0,0.9) 0,rgba(0,0,0,.5) 100%)",
+                padding: {
+                  lg: "0 100px",
+                },
+                display: "flex",
+                // alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}>
       <Typography
         align="left"
         variant="h5"
@@ -87,6 +103,7 @@ const AboutSection = () => {
           </Grid>
         </Grid>
       </Box>
+      </Stack>
     </Box>
   );
 };
