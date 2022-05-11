@@ -23,6 +23,7 @@ const NavBar = () => {
         background: "#fff",
         zIndex: 1000,
         boxShadow: "1px 0 15px 1px rgba(0,0,0,.1)",
+        top:0
       }}
     >
       {minWidth1200px && <WideScreenNavbar />}
@@ -86,7 +87,7 @@ const WideScreenNavbar = () => {
         }}
       >
         <NavTabLink title="Home" route="/" />
-        <NavTabLink title="About us" route="/#our-services" />
+        <NavTabLink title="About us" route="/#about" />
         
       </Box>
 
@@ -192,7 +193,7 @@ const SmallScreenNavBar = () => {
                 },
                 {
                   title: "About Us",
-                  route: "/#about-us",
+                  route: "/#about",
                 },
               ].map((link, index) => (
                 <>
