@@ -4,6 +4,7 @@ import Dialog from "./Dialog";
 import Link from "next/link";
 import { productsArr } from "../../state/products";
 import * as React from "react";
+// import { SectionHeader } from "../../utils";
 
 export default function Products() {
 
@@ -19,7 +20,7 @@ export default function Products() {
         alignItems: "center",
       }}
     >
-      <SectionHeader text={"PRODUCTS"} />
+      {/* <SectionHeader text={"PRODUCTS"} /> */}
       <Grid container >
         {productsArr.map((product,index)=>{
           if(index < 8){

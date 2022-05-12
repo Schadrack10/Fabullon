@@ -78,7 +78,7 @@ export default function ProductItem({
             width: {
               xs: "300px",
               sm: "300px",
-              md: "315px",
+              md: "250px",
             },
             minHeight: "220px",
             display: "flex",
@@ -86,7 +86,7 @@ export default function ProductItem({
             padding: "0px",
             textAlign: "center",
             "&:hover": {
-              // border: "1px solid #ef8729",
+              border: "1px solid #ef8729",
               // color: "#ef8729",
               cursor: "pointer",
             },
@@ -103,8 +103,11 @@ export default function ProductItem({
 
             <img
               src={currentImg}
-            sx={{
+            style={{
+              width:'100%', 
+              height:'100%',  
               "&:hover": {
+                
                 background: "#ef8729",
               },
             }}

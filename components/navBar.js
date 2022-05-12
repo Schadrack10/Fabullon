@@ -195,6 +195,14 @@ const SmallScreenNavBar = () => {
                   title: "About Us",
                   route: "/#about",
                 },
+                {
+                  title: "Products",
+                  route: "/products",
+                },
+                {
+                  title: "Contact",
+                  route: "/#contact",
+                },
               ].map((link, index) => (
                 <>
                   <Link href={link.route}>
