@@ -62,7 +62,7 @@ export default function ProductItem({
 
   return (
     <div>
-      <Box sx={{ '&:hover': {   background:'rgb(242, 242, 242)', background:'#fff' } }}>
+      <Box>
 
         <Box
           sx={{
@@ -78,7 +78,7 @@ export default function ProductItem({
             width: {
               xs: "300px",
               sm: "300px",
-              md: "315px",
+              md: "275px",
             },
             minHeight: "220px",
             display: "flex",
@@ -100,19 +100,23 @@ export default function ProductItem({
             </Button>
           </Box>
           <Box sx={{ background: '#fff', margin: "0 auto", height: '60%', width:'100%' }}>
-
             <img
               src={currentImg}
-            sx={{
+            style={{
+               width:"100%",
+               objectFit:"contain",
+               height:"100%",
               "&:hover": {
                 background: "#ef8729",
               },
             }}
           />
-          <Stack
+        </Box>
+          <Box
             sx={{
+             
+              height: "25%",
               padding: "0 8px",
-              minHeight: "25%",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -122,8 +126,7 @@ export default function ProductItem({
             }}
           >
             <Typography sx={{fontWeight:"bolder"}} noWrap={false} variant="p">{productName} </Typography>
-          </Stack>
-        </Box>
+          </Box>
       </Box>
 
 
