@@ -99,7 +99,7 @@ const Footer = () => {
         <Grid item xs={12} md={3}>
           <Box sx={{ pt: 2, pb: 1, fontWeight: 700 }}>OUR PRODUCTS</Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -114,7 +114,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -129,7 +129,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -144,7 +144,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -159,7 +159,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -174,7 +174,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -189,7 +189,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -204,7 +204,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -219,7 +219,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -234,7 +234,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -253,7 +253,7 @@ const Footer = () => {
 
         <Grid item xs={12} md={3}>
           <Box sx={{ mt:'50px'}}>
-            <Link href="/software-development">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -268,7 +268,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/software-development">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -283,7 +283,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/design-and-marketing#graphic-design">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -298,7 +298,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/design-and-marketing#marketing">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -328,7 +328,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -343,7 +343,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -358,7 +358,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -377,7 +377,7 @@ const Footer = () => {
         <Grid item xs={12} md={3}>
           <Box sx={{ pt: 2, pb: 1, fontWeight: 700 }}>STAY UPDATED</Box>
           <Box>
-            <Link href="/#about-us">
+            <Link href="/">
               <a
                 style={{
                   pt: "2px",
@@ -392,7 +392,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/">
               <a
                 style={{
                   pt: "2px",
@@ -407,7 +407,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/">
               <a
                 style={{
                   pt: "2px",

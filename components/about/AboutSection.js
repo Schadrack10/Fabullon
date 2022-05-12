@@ -16,7 +16,7 @@ const AboutSection = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         color: "white",
-        marginTop: 70,
+        marginTop: 50,
         // padding: "130px 0px",
         display: "flex",
         justifyContent: "center",

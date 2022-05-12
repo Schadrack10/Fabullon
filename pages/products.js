@@ -33,12 +33,12 @@ export default function Products() {
       sx={{
         minHeight: "100vh",
         width: "100%",
-        // background:'rgb(242, 242, 242)',
+        background:'rgb(242, 242, 242)',
         background:'#fff',
         padding: {
-          xs: "16px 40px",
-          md: "16px 60px",
-          lg: "16px 80px",
+          xs: "70px 40px",
+          md: "76px 60px",
+          lg: "90px 80px",
         },
       }}
     >

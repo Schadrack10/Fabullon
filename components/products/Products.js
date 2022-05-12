@@ -37,7 +37,7 @@ export default function Products() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              background:"coral"
+              // background:"coral"
             }}
           >
             <ProductItem
@@ -66,7 +66,7 @@ export default function Products() {
               sx={{
                 fontWeight: "900",
                 color: "white",
-                background: "#ef8729",
+                background: "#fcc200",
                 maxWidth: "400px",
                 "&:hover": {
                   color: "#ef8729",

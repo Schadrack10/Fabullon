@@ -127,11 +127,11 @@ const Banner = () => {
               }}
             >
               <Typography>
-                <span style={{ fontSize: "39px", fontWeight: "700" }}>
+                <span style={{ fontSize: "49px", fontWeight: "700" }}>
                   Turning Your
                 </span>
                 <br />
-                <span style={{ fontSize: "25px" }}>Home into paradise</span>
+                <span style={{ fontSize: "35px" }}>Home into paradise</span>
                 <br />
                 <span>Our products are designed</span>
                 <br />
@@ -146,7 +146,7 @@ const Banner = () => {
             md={7}
             sx={{ display: "flex", justifyContent: "center" }}
           >
-            <img src="./banner7.jpeg" width="80%" height="auto" />
+            <img src="./banner7.jpeg" width="65%" height="auto" style={{borderRadius:'7px'}} />
           </Grid>
         </Grid>
       </Box>
