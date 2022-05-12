@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Link from "next/link";
 import { Box, Typography, Button, Stack } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,6 +11,7 @@ const SaviorsOfDreams = () => {
       <Swiper
         id="contact-swiper"
         direction={"horizontal"}
+        speed={3000}
         pagination={{
           clickable: true,
         }}
