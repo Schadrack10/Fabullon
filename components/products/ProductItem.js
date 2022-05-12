@@ -102,18 +102,7 @@ export default function ProductItem({
           <Box sx={{ background: '#fff', margin: "0 auto", height: '60%', width:'100%' }}>
 
             <img
-              src=""
-              alt=""
-              style={{
-                height: "65%",
-                objectFit: "contain",
-                // border: '1px solid red',
-                padding: "32px",
-
-              }}
-            />
-          </Box>
-          <Divider
+              src={currentImg}
             sx={{
               "&:hover": {
                 background: "#ef8729",
@@ -132,7 +121,7 @@ export default function ProductItem({
 
             }}
           >
-            <Typography noWrap={false} variant="p">{productName} </Typography>
+            <Typography sx={{fontWeight:"bolder"}} noWrap={false} variant="p">{productName} </Typography>
           </Stack>
         </Box>
       </Box>
@@ -229,6 +218,7 @@ export default function ProductItem({
           </Box>
         </Fade>
       </Modal>
+      </Box>
     </div>
   );
 }

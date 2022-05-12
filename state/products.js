@@ -2,7 +2,7 @@ export const productsArr = [
   {
     name: "Black Bed",
     category: "Bed",
-    image: "img-1.png",
+    image: "bed-black.jpeg",
     description: [
       "Durable",
       "Affordable",
@@ -24,21 +24,41 @@ export const productsArr = [
     name: "cupboard-A",
     category: "Cup-Board",
     image: "cupboard-a.jpeg",
+    description: [
+      "Durable",
+      "Affordable",
+      "Spare Lenses available",
+    ],
   },
   {
     name: "cupboard-Z",
     category: "Cup-Board",
     image: "cupboard-z.jpeg",
+    description: [
+      "Durable",
+      "Affordable",
+      "Spare Lenses available",
+    ],
   },
   {
     name: "cupboard ordinary",
     category: "Cup-Board",
     image: "cupboard.jpeg",
+    description: [
+      "Durable",
+      "Affordable",
+      "Spare Lenses available",
+    ],
   },
   {
     name: "cupboard-Black",
     category: "Cup-Board",
     image: "cupboard-black.jpeg",
+    description: [
+      "Durable",
+      "Affordable",
+      "Spare Lenses available",
+    ],
   },
   {
     name: "Red Chair",
@@ -97,7 +117,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+      "Material available",
     ],
   },
   
