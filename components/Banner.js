@@ -5,11 +5,8 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from "next/link";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-// import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import SearchIcon from "@mui/icons-material/Search";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Banner = () => {
   return (
@@ -26,20 +23,92 @@ const Banner = () => {
         padding: "0 60px",
       }}
     >
-      <Box sx={{ border: "1px solid black", mt: 5 }}>
+      <Box sx={{ mt: 5 }}>
         <Grid container spacing={2} columns={12}>
-          <Grid xs={12} md={6} sx={{display:'flex', alignItems:'center'}}>
-            <Box sx={{width:'180px'}}>
-            <Typography sx={{ fontSize: "15px",color:'white'}}>PRODUCTS</Typography>
+          <Grid xs={12} md={6} sx={{ display: "flex", alignItems: "center",justifyContent:'flex-start'}}>
+            <Box sx={{ width: "180px"}}>
+            <Box
+                  sx={{
+                    display: "flex",
+                    cursor: "pointer",
+                    height: "100%",
+                    width: "70%",
+                    heigh:'100%',
+                    alignItems:'center'
+                  }}
+                >
+                  <Typography sx={{ fontSize:'15px',color:'white',mr:2}}>
+                    PRODUCTS
+                  </Typography>
+                  <KeyboardArrowDownIcon fontSize="small" sx={{pb:'5px',color:'white'}} />
+                </Box>
             </Box>
 
-            <Link href="/#contact">
-              <a target="_blank">
-                <Typography sx={{ fontSize: "15px",ml:10,color:'white'}}>CONTACT US</Typography>
+            <Link href="/#contact" target="_blank">
+              <a>
+                <Typography sx={{ fontSize: "15px", ml: 10, color: "white" }}>
+                  CONTACT US
+                </Typography>
               </a>
             </Link>
           </Grid>
-          <Grid xs={12} md={6}></Grid>
+
+          <Grid xs={12} md={6}>
+            <Box
+              sx={{
+                height: "35px",
+                minWidth: "200px",
+                borderRadius: "20px",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <input
+                type="search"
+                style={{
+                  width: "60%",
+                  borderRadius: "20px 0 0 20px",
+                  padding: "0 20px",
+                  background: "lightgrey",
+                  opacity: "0.9",
+                  border: "none",
+                }}
+                placeholder="Search..."
+              />
+
+              <Box
+                sx={{
+                  width: {lg:"39.9%", xs:'50%'},
+                  borderRadius: "0 20px 20px 0",
+                  background: "lightgrey",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  opacity: "0.9",
+                  alignItems: "center",
+                  height: "100%",
+                  
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    cursor: "pointer",
+                    height: "100%",
+                    width: "70%",
+                    heigh:'100%',
+                    alignItems:'center'
+                  }}
+                >
+                  <Typography sx={{ fontSize: {lg: '12px', xs:'10px'}}}>
+                    ALL PRODUCTS
+                  </Typography>
+                  <KeyboardArrowDownIcon fontSize="small" />
+                </Box>
+
+                <SearchIcon fontSize="small"/>
+              </Box>
+            </Box>
+          </Grid>
         </Grid>
       </Box>
 
@@ -54,6 +123,7 @@ const Banner = () => {
                 justifyContent: "center",
                 height: "100%",
                 ml: 7,
+                mb: {  xs: '30px' }
               }}
             >
               <Typography>
@@ -76,7 +146,7 @@ const Banner = () => {
             md={7}
             sx={{ display: "flex", justifyContent: "center" }}
           >
-            {/* <img src="./banner7.jpeg" width="80%" height="auto" /> */}
+            <img src="./banner7.jpeg" width="80%" height="auto" />
           </Grid>
         </Grid>
       </Box>
@@ -84,10 +154,11 @@ const Banner = () => {
       <Box
         sx={{
           background: "#111",
-          height: "100px",
+          // height: {lg:"100px", xs:'130px'},
           display: "flex",
           alignItems: "center",
-          padding: "20px 0",
+          padding: {md:"20px 0px", xs:'40px 0 0 0'},
+          mt: { xs:'10px' }
         }}
       >
         <Grid container spacing={2} columns={12}>
@@ -99,9 +170,10 @@ const Banner = () => {
                 justifyContent: "center",
                 pt: 2,
                 mb: 2,
+
               }}
             >
-              <Button sx={{ color: "#fff", background: "#71797E !important" }}>
+              <Button sx={{ color: "#fff", background: "#71797E !important",mb: { xs:'10px' } }}>
                 Featured Products
               </Button>
             </Box>
