@@ -97,12 +97,13 @@ export default function ProductItem({
               </svg>
             </Button>
           </Box>
-          <Box sx={{ background: '#fff', margin: "0 auto", height: '60%', width:'100%' }}>
+          <Box sx={{ background: '#fff', margin: "0 auto", height: '60%', width:'100%',padding:'10px' }}>
             <img
               src={currentImg}
             style={{
               width:'100%', 
-              height:'100%',  
+              height:'100%',
+              objectFit:'contain',  
               "&:hover": {
                 
                 background: "#ef8729",
