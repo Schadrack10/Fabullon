@@ -63,7 +63,7 @@ const WideScreenNavbar = () => {
         }}
       >
         <Link href="/">
-          <a
+          <img
             style={{
               width: "100%",
               height: "100%",
@@ -71,9 +71,9 @@ const WideScreenNavbar = () => {
               alignItems: "center",
               justifyContent: "center",
             }}
-          >
-            logo
-          </a>
+            src="logo.png"
+          />
+        
         </Link>
       </Box>
 

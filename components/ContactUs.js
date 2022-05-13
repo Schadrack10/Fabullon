@@ -130,7 +130,7 @@ const ContactUs = () => {
 
             <Button
                 sx={{
-                  background: "#fcc200 !important",
+                  background: "#f9b33a !important",
                   borderRadius: 0,
                   paddingLeft: "18px",
                   mt: 4,
@@ -161,7 +161,7 @@ const ContactUs = () => {
               background: "#fff",
               boxShadow: 2,
               pb: 4,
-              border:'7px solid #fcc200'
+              border:'7px solid #f9b33a'
             }}
           >
             

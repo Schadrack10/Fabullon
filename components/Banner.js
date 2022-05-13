@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <Box
       sx={{
-        background: "#fcc200",
+        background: "#f9b33a",
         width: "100%",
         height: "600px",
         mt: 9,

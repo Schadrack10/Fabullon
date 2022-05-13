@@ -66,7 +66,7 @@ export default function Products() {
               sx={{
                 fontWeight: "900",
                 color: "white",
-                background: "#fcc200",
+                background: "#f9b33a",
                 maxWidth: "400px",
                 "&:hover": {
                   color: "#ef8729",
