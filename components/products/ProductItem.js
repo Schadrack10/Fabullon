@@ -66,7 +66,7 @@ export default function ProductItem({
         <Box
           sx={{
             height: "100%",
-            border: "1px solid rgba(9,9,9,0.1)",
+            border: "1px solid #f4f4f4",
             borderRadius: '10px',
             color: "rgba(1,1,1,0.5)",
             fontWeight: "900",
@@ -89,7 +89,7 @@ export default function ProductItem({
             },
           }}
         >
-          <Box sx={{ width: '100%', height: '15%', background: 'rgb(242, 242, 242)', borderRadius: '10px 10px 0 0', display: 'flex', justifyContent: "flex-end" }} x>
+          <Box sx={{ width: '100%', height: '15%', background: '#f6f6f6', borderRadius: '10px 10px 0 0', display: 'flex', justifyContent: "flex-end" }} x>
             <Button onClick={handleOpen}>
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                 <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
@@ -118,7 +118,7 @@ export default function ProductItem({
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              background: 'rgb(242, 242, 242)',
+              background: '#f6f6f6',
               borderRadius: '0 0 10px 10px '
 
             }}

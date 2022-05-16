@@ -12,8 +12,6 @@ import ProductItem from "../components/products/ProductItem";
 import ProductHeaderButton from "../components/products/ProductHeaderButton";
 import { productsArr } from "../state/products";
 import { Catergories } from "../state/Catergories";
-import SaviorOfDream from '../components/SaviorsOfDreams'
-// import Products from '../components/Products'
 import { useState } from "react";
 
 export default function Products() {
@@ -34,12 +32,11 @@ export default function Products() {
       sx={{
         minHeight: "100vh",
         width: "100%",
-        background:'rgb(242, 242, 242)',
-        background:'#fff',
+        // background:'#cecece',
         padding: {
-          xs: "70px 40px",
-          md: "76px 60px",
-          lg: "90px 0px",
+          xs: "16px 40px",
+          md: "16px 60px",
+          lg: "16px 80px",
         },
       }}
     >
@@ -57,7 +54,7 @@ export default function Products() {
           },
         }}
       >
-        <Typography sx={{fontWeight:'light', fontFamily:'monospace'}} fontSize="22px" variant="h5">Filter by :</Typography>
+        <Typography variant="h2\5">Filter by :</Typography>
         <Select value={filterChoice} onChange={handleFilterChange}>
           <MenuItem value="">{"All"}</MenuItem>
           {Catergories.map((cat, index) => {
@@ -83,16 +80,16 @@ export default function Products() {
       </Box>
 
       <Typography
-        variant="h4"
+        variant="h3"
         component="div"
         gutterBottom
         align="center"
-
-        sx={{ fontWeight: "300", fontFamily:'monospace', letterSpacing:'0px' }}
+        color="blue"
+        style={{ fontWeight: "600" }}
       >
         {filterChoice}
       </Typography>
-      <Grid container >
+      <Grid container>
         {productsArr.sort().map((product, index) => {
           if (filterChoice !== "") {
             if (filterChoice === product.category) {
@@ -141,16 +138,12 @@ export default function Products() {
                   productDescription={product.description}
                   productDescription2="Praesent commodo cursus magna, vel scelerisque nisl consectetur et.Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
                   productImg={product.image}
-                 />
+                />
               </Grid>
             );
           }
         })}
       </Grid>
-
-  <SaviorOfDream/>
-  {/* <Products/> */}
-
     </Box>
   );
 }
