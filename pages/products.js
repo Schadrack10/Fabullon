@@ -9,7 +9,6 @@ import {
   Typography,
 } from "@mui/material";
 import ProductItem from "../components/products/ProductItem";
-import Dialog from "../components/products/Dialog";
 import ProductHeaderButton from "../components/products/ProductHeaderButton";
 import { productsArr } from "../state/products";
 import { Catergories } from "../state/Catergories";
