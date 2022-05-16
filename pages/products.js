@@ -13,6 +13,8 @@ import Dialog from "../components/products/Dialog";
 import ProductHeaderButton from "../components/products/ProductHeaderButton";
 import { productsArr } from "../state/products";
 import { Catergories } from "../state/Catergories";
+import SaviorOfDream from '../components/SaviorsOfDreams'
+// import Products from '../components/Products'
 import { useState } from "react";
 
 export default function Products() {
@@ -38,7 +40,7 @@ export default function Products() {
         padding: {
           xs: "70px 40px",
           md: "76px 60px",
-          lg: "90px 80px",
+          lg: "90px 0px",
         },
       }}
     >
@@ -92,7 +94,7 @@ export default function Products() {
       >
         {filterChoice}
       </Typography>
-      <Grid container>
+      <Grid container >
         {productsArr.sort().map((product, index) => {
           if (filterChoice !== "") {
             if (filterChoice === product.category) {
@@ -141,12 +143,16 @@ export default function Products() {
                   productDescription={product.description}
                   productDescription2="Praesent commodo cursus magna, vel scelerisque nisl consectetur et.Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
                   productImg={product.image}
-                />
+                 />
               </Grid>
             );
           }
         })}
       </Grid>
+
+  <SaviorOfDream/>
+  {/* <Products/> */}
+
     </Box>
   );
 }
