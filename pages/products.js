@@ -84,7 +84,6 @@ export default function Products() {
 
       <Typography
         variant="h4"
-         
         component="div"
         gutterBottom
         align="center"
