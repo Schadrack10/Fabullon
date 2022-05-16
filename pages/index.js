@@ -1,6 +1,11 @@
 import Head from 'next/head'
 import { useEffect } from "react";
 import { Box } from "@mui/material";
+import AboutSection from '../components/about/AboutSection';
+import ContactUs from '../components/ContactUs';
+import SaviorsOfDreams from '../components/SaviorsOfDreams';
+import Banner from '../components/Banner';
+import ItemsSection from '../components/ItemsSection';
 
 export default function Home() {
   useEffect(() => {
@@ -12,9 +17,11 @@ export default function Home() {
   }, []);
   return (
     <Box>
-
-
-
+      <Banner />
+      <ItemsSection />
+      <AboutSection />
+      <SaviorsOfDreams />
+      <ContactUs />
     </Box>
   )
 }

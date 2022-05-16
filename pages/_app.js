@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
         TransitionComponent={Slide}
       >
         <PageHead />
-        {/* <NavBar /> */}
+        <NavBar />
         <Component {...pageProps} />
         <Footer />
       </SnackbarProvider>

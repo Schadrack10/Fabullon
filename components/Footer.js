@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-import { Box, IconButton, useMediaQuery } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
+
 
 
 const Footer = () => {
   const minWidth600px = useMediaQuery("(min-width:600px)");
+  const [processing, setIsProcessing] = useState(false);
 
   return (
     <Box
@@ -32,7 +34,7 @@ const Footer = () => {
                 <Grid item xs={12} md={3}>
           <Box sx={{ pt: 2, pb: 1, fontWeight: 700 }}>COMPANY</Box>
           <Box>
-            <Link href="/software-development">
+            <Link href="/#about">
               <a
                 style={{
                   pt: "2px",
@@ -47,7 +49,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/software-development">
+            <Link href="/">
               <a
                 style={{
                   pt: "2px",
@@ -62,7 +64,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/design-and-marketing#graphic-design">
+            <Link href="/#contact">
               <a
                 style={{
                   pt: "2px",
@@ -77,7 +79,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/design-and-marketing#marketing">
+            <Link href="/">
               <a
                 style={{
                   pt: "2px",
@@ -97,7 +99,7 @@ const Footer = () => {
         <Grid item xs={12} md={3}>
           <Box sx={{ pt: 2, pb: 1, fontWeight: 700 }}>OUR PRODUCTS</Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -112,7 +114,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -127,7 +129,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -142,7 +144,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -157,7 +159,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -172,7 +174,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -187,7 +189,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -202,7 +204,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -217,7 +219,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -232,7 +234,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -251,7 +253,7 @@ const Footer = () => {
 
         <Grid item xs={12} md={3}>
           <Box sx={{ mt:'50px'}}>
-            <Link href="/software-development">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -266,7 +268,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/software-development">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -281,7 +283,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/design-and-marketing#graphic-design">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -296,7 +298,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/design-and-marketing#marketing">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -326,7 +328,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -341,7 +343,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -356,7 +358,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/products">
               <a
                 style={{
                   pt: "2px",
@@ -375,7 +377,7 @@ const Footer = () => {
         <Grid item xs={12} md={3}>
           <Box sx={{ pt: 2, pb: 1, fontWeight: 700 }}>STAY UPDATED</Box>
           <Box>
-            <Link href="/#about-us">
+            <Link href="/">
               <a
                 style={{
                   pt: "2px",
@@ -390,7 +392,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/">
               <a
                 style={{
                   pt: "2px",
@@ -405,7 +407,7 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-            <Link href="/contact">
+            <Link href="/">
               <a
                 style={{
                   pt: "2px",
@@ -420,7 +422,37 @@ const Footer = () => {
             </Link>
           </Box>
           <Box>
-          <Button variant="outlined" size="small" sx={{mt:2, color:'white',outline:'white'}}>View Map</Button>
+          <Button
+                sx={{
+                  background: "#fff !important",
+                  borderRadius: 0,
+                  paddingLeft: "14px",
+                  mt: 4,
+                  pr: 1.3,
+                  color: "#000",
+                  pointerEvents: processing ? "none" : "auto",
+                  opacity: processing ? 0.8 : 1,
+                  height: "36px",
+                  width: "100px",
+                  fontSize:'14px'
+                }}
+                size="small"
+                color="secondary"
+              >
+                {processing ? (
+                  <>
+                    VIEWING MAP
+                    <Box sx={{ ml: 1 }}>
+                      {/* <GooSpinner size={30} color="#fff" loading={true} /> */}
+                    </Box>
+                  </>
+                ) : (
+                  <>
+                    VIEW MAP
+                   
+                  </>
+                )}
+              </Button>
           </Box>
         </Grid>
       </Grid>
@@ -456,17 +488,6 @@ const Footer = () => {
               </Grid>
             </Box>
 
-
-      {/* <Box
-        sx={{
-          fontSize: "10px",
-          p: 4,
-          pb: 0,
-          textAlign: "center",
-        }}
-      >
-        @{new Date().getFullYear()} Active Media Industries Pty Ltd
-      </Box> */}
     </Box>
   );
 };

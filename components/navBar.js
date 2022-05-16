@@ -23,6 +23,7 @@ const NavBar = () => {
         background: "#fff",
         zIndex: 1000,
         boxShadow: "1px 0 15px 1px rgba(0,0,0,.1)",
+        top:0
       }}
     >
       {minWidth1200px && <WideScreenNavbar />}
@@ -62,7 +63,8 @@ const WideScreenNavbar = () => {
         }}
       >
         <Link href="/">
-          <a
+          <img
+           alt="logo"
             style={{
               width: "100%",
               height: "100%",
@@ -70,9 +72,9 @@ const WideScreenNavbar = () => {
               alignItems: "center",
               justifyContent: "center",
             }}
-          >
-            logo
-          </a>
+            src="logo.png"
+          />
+        
         </Link>
       </Box>
 
@@ -86,7 +88,7 @@ const WideScreenNavbar = () => {
         }}
       >
         <NavTabLink title="Home" route="/" />
-        <NavTabLink title="About us" route="/#our-services" />
+        <NavTabLink title="About us" route="/#about" />
         
       </Box>
 
@@ -192,7 +194,15 @@ const SmallScreenNavBar = () => {
                 },
                 {
                   title: "About Us",
-                  route: "/#about-us",
+                  route: "/#about",
+                },
+                {
+                  title: "Products",
+                  route: "/products",
+                },
+                {
+                  title: "Contact",
+                  route: "/#contact",
                 },
               ].map((link, index) => (
                 <>

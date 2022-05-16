@@ -1,9 +1,9 @@
 import { Box, Grid, Typography, Button } from "@mui/material";
 import ProductItem from "./ProductItem";
-import Dialog from "./Dialog";
 import Link from "next/link";
 import { productsArr } from "../../state/products";
 import * as React from "react";
+// import { SectionHeader } from "../../utils";
 
 export default function Products() {
 
@@ -13,14 +13,13 @@ export default function Products() {
       sx={{
         minHeight: "100vh",
         width: "100%",
-        background:'coral',
         padding: "16px 80px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
       }}
     >
-      <SectionHeader text={"PRODUCTS"} />
+      {/* <SectionHeader text={"PRODUCTS"} /> */}
       <Grid container >
         {productsArr.map((product,index)=>{
           if(index < 8){
@@ -37,7 +36,7 @@ export default function Products() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              background:"coral"
+              // background:"coral"
             }}
           >
             <ProductItem
@@ -66,7 +65,7 @@ export default function Products() {
               sx={{
                 fontWeight: "900",
                 color: "white",
-                background: "#ef8729",
+                background: "#f9b33a",
                 maxWidth: "400px",
                 "&:hover": {
                   color: "#ef8729",
