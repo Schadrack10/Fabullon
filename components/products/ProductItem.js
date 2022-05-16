@@ -10,7 +10,7 @@ import { Box, Typography, Stack, Divider, Grid } from "@mui/material";
 function RenderProductDescription({ productDescription }) {
   if (productDescription) {
     return (
-      <ul style={{ listStyleType: "disc" }}>
+      <ul style={{ listStyleType: "disc", padding:0, margin:0 }}>
         {productDescription.map((description, index) => {
           console.log(description);
           return <li key={index}>{description}</li>;
@@ -66,14 +66,14 @@ export default function ProductItem({
         <Box
           sx={{
             height: "100%",
-            border: "1px solid #f4f4f4",
+            border: "1px solid #f9b33a",
             borderRadius: '10px',
             color: "rgba(1,1,1,0.5)",
             fontWeight: "900",
             maxHeight: "370px",
             height: "370px",
-            background: '',
-            margin: '20px 5px',
+            // background: 'rgb(255,255,0)',
+            margin: '50px 5px',
             width: {
               xs: "300px",
               sm: "300px",
@@ -89,9 +89,9 @@ export default function ProductItem({
             },
           }}
         >
-          <Box sx={{ width: '100%', height: '15%', background: '#f6f6f6', borderRadius: '10px 10px 0 0', display: 'flex', justifyContent: "flex-end" }} x>
+          <Box sx={{ width: '100%', height: '15%', background: '#f9b33a', borderRadius: '10px 10px 0 0', display: 'flex', justifyContent: "flex-end" }} x>
             <Button onClick={handleOpen}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                 <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
               </svg>
             </Button>
@@ -118,12 +118,12 @@ export default function ProductItem({
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              background: '#f6f6f6',
+              background: '#f9b33a',
               borderRadius: '0 0 10px 10px '
 
             }}
           >
-            <Typography sx={{ fontWeight: "bolder" }} noWrap={false} variant="p">{productName} </Typography>
+            <Typography color="white" sx={{ fontWeight: "bolder" }} noWrap={false} variant="p">{productName} </Typography>
           </Box>
         </Box>
 
@@ -151,11 +151,17 @@ export default function ProductItem({
                   id="transition-modal-title"
                   variant="h6"
                   component="h2"
+                  style={{fontWeight:'bolder'}}
                 >
                   {productName}
                 </Typography>
               </Box>
-              <Divider sx={{ m: "8px 0px" }} />
+              <Divider sx={{
+                m: "8px 0px",
+                height: '6px',
+                background: '#f9b33a',
+                transform: ' skew(50deg)'
+              }} />
               <Grid container spacing={2} columns={12}>
                 <Grid
                   item
@@ -172,9 +178,9 @@ export default function ProductItem({
                     src={currentImg}
                     style={{
                       objectFit: "contain",
-                      minWidth: "200px",
-                      height: "250px",
+                      minWidth: "100px",
                       maxHeight: "80vh",
+                      margin:'20px 0'
                     }}
                   />
                 </Grid>
@@ -184,20 +190,23 @@ export default function ProductItem({
                   md={6}
                   sx={{
                     display: "flex",
-                    justifyContent: "space-evenly",
+                    justifyContent: "center",
                     alignItems: {
                       xs: "baseline",
-                      lg: "baseline",
+                      lg: "flex-start",
+                      md:'flex-start'
                     },
                     flexDirection: "column",
                   }}
                 >
                   <h1
                     style={{
-                      fontSize: "20px",
+                      margin:'10px 0',
+                      fontSize: "25px",
+                  
                     }}
                   >
-                    About The Product
+                    More About {productName}
                   </h1>
                   <Typography
                     gutterBottom
@@ -221,7 +230,7 @@ export default function ProductItem({
           </Fade>
         </Modal>
       </Box>
-     
+
 
 
 

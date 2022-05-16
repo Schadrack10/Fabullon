@@ -21,7 +21,7 @@ export const productsArr = [
     ],
   },
   {
-    name: "cupboard-A",
+    name: "Cupboard-A",
     category: "Cup-Board",
     image: "cupboard-a.jpeg",
     description: [
@@ -31,7 +31,7 @@ export const productsArr = [
     ],
   },
   {
-    name: "cupboard-Z",
+    name: "Cupboard-Z",
     category: "Cup-Board",
     image: "cupboard-z.jpeg",
     description: [
@@ -41,7 +41,7 @@ export const productsArr = [
     ],
   },
   {
-    name: "cupboard ordinary",
+    name: "Cupboard ordinary",
     category: "Cup-Board",
     image: "cupboard.jpeg",
     description: [
@@ -51,7 +51,7 @@ export const productsArr = [
     ],
   },
   {
-    name: "cupboard-Black",
+    name: "Cupboard-Black",
     category: "Cup-Board",
     image: "cupboard-black.jpeg",
     description: [

@@ -32,11 +32,11 @@ export default function Products() {
       sx={{
         minHeight: "100vh",
         width: "100%",
-        // background:'#cecece',
+        // background:'#f8f8f8',
         padding: {
-          xs: "16px 40px",
-          md: "16px 60px",
-          lg: "16px 80px",
+          xs: "70px 40px",
+          md: "80px 60px",
+          lg: "80px 40px",
         },
       }}
     >
@@ -54,9 +54,9 @@ export default function Products() {
           },
         }}
       >
-        <Typography variant="h2\5">Filter by :</Typography>
-        <Select value={filterChoice} onChange={handleFilterChange}>
-          <MenuItem value="">{"All"}</MenuItem>
+        <Typography fontSize={25} variant="h2\5">Filter by :</Typography>
+        <Select  value={filterChoice} onChange={handleFilterChange}>
+          <MenuItem  value="">{"All"}</MenuItem>
           {Catergories.map((cat, index) => {
             return <MenuItem key={index} value={cat}>{cat}</MenuItem>;
           })}
@@ -72,9 +72,12 @@ export default function Products() {
           },
         }}
       >
-        <Divider
+        <Box
           sx={{
             margin: "21px 0",
+            height:'10px',
+            background:'#f9b33a',
+            transform:' skew(50deg)'
           }}
         />
       </Box>
@@ -84,8 +87,8 @@ export default function Products() {
         component="div"
         gutterBottom
         align="center"
-        color="blue"
-        style={{ fontWeight: "600" }}
+        color="#000"
+        style={{ fontWeight: "400", fontFamily:'monospace' ,fontSize:'35px'}}
       >
         {filterChoice}
       </Typography>
