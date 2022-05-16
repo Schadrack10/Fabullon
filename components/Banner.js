@@ -146,7 +146,7 @@ const Banner = () => {
             md={7}
             sx={{ display: "flex", justifyContent: "center" }}
           >
-            <img src="./banner7.jpeg" width="65%" height="auto" style={{borderRadius:'7px'}} />
+            <img alt="banner" src="./banner7.jpeg" width="65%" height="auto" style={{borderRadius:'7px'}} />
           </Grid>
         </Grid>
       </Box>
