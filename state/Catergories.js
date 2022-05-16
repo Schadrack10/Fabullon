@@ -3,6 +3,6 @@ export const Catergories = [
     "CupBoard" ,
     "Chair" ,
     "Table" ,
-     "warddrope"
+
 
   ]
