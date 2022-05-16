@@ -13,6 +13,8 @@ import ProductHeaderButton from "../components/products/ProductHeaderButton";
 import { productsArr } from "../state/products";
 import { Catergories } from "../state/Catergories";
 import { useState } from "react";
+import SaviorOfDreams from '../components/SaviorsOfDreams'
+import ContactUs from '../components/ContactUs'
 
 export default function Products() {
   const [index, setIndex] = useState(false);
@@ -28,6 +30,7 @@ export default function Products() {
     setIndex(index + 1);
   };
   return (
+    <>
     <Box
       sx={{
         minHeight: "100vh",
@@ -148,5 +151,11 @@ export default function Products() {
         })}
       </Grid>
     </Box>
+      <SaviorOfDreams/>
+      <ContactUs/>
+    
+    
+    
+    </>
   );
 }

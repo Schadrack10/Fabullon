@@ -1,8 +1,7 @@
 export const Catergories = [
     "Bed" , 
-    "CupBoard" ,
+    "Cup-Board" ,
     "Chair" ,
     "Table" ,
-
-
+  
   ]
