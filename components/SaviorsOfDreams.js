@@ -11,12 +11,12 @@ const SaviorsOfDreams = () => {
       <Swiper
         id="contact-swiper"
         direction={"horizontal"}
-        speed={3000}
+        speed={3500}
         pagination={{
           clickable: true,
         }}
         autoplay={{
-          delay: 3000,
+          delay: 2500,
         }}
         modules={[Pagination, Autoplay]}
         className="mySwiper"

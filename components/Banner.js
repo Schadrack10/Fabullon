@@ -1,66 +1,176 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
-import { Box, IconButton, Button, Typography } from "@mui/material";
-import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import { Box, Button, Typography } from "@mui/material";
 import Link from "next/link";
 import SearchIcon from "@mui/icons-material/Search";
+import { styled, alpha } from "@mui/material/styles";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
+const StyledMenu = styled((props) => (
+  <Menu
+    elevation={0}
+    anchorOrigin={{
+      vertical: "bottom",
+      horizontal: "right",
+    }}
+    transformOrigin={{
+      vertical: "top",
+      horizontal: "right",
+    }}
+    {...props}
+  />
+))(({ theme }) => ({
+  "& .MuiPaper-root": {
+    borderRadius: 6,
+    marginTop: theme.spacing(1),
+    minWidth: 180,
+    color:
+      theme.palette.mode === "light"
+        ? "rgb(55, 65, 81)"
+        : theme.palette.grey[300],
+    boxShadow:
+      "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+    "& .MuiMenu-list": {
+      padding: "4px 0",
+    },
+    "& .MuiMenuItem-root": {
+      "& .MuiSvgIcon-root": {
+        fontSize: 18,
+        color: theme.palette.text.secondary,
+        marginRight: theme.spacing(1.5),
+      },
+      "&:active": {
+        backgroundColor: alpha(
+          theme.palette.primary.main,
+          theme.palette.action.selectedOpacity
+        ),
+      },
+    },
+  },
+}));
+
 const Banner = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <Box
       sx={{
         background: "#f9b33a",
         width: "100%",
-        height: "600px",
-        mt: 9,
+        mt: 8.7,
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "column",
-        pt: 5,
+        // pt: 3, 
         padding: "0 60px",
+        position: "relative",
+        pb: 3,
       }}
     >
       <Box sx={{ mt: 5 }}>
         <Grid container spacing={2} columns={12}>
-          <Grid xs={12} md={6} sx={{ display: "flex", alignItems: "center",justifyContent:'flex-start'}}>
-            <Box sx={{ width: "180px"}}>
-            <Box
-                  sx={{
-                    display: "flex",
-                    cursor: "pointer",
-                    height: "100%",
-                    width: "70%",
-                    heigh:'100%',
-                    alignItems:'center'
-                  }}
-                >
-                  <Typography sx={{ fontSize:'15px',color:'white',mr:2}}>
-                    PRODUCTS
-                  </Typography>
-                  <KeyboardArrowDownIcon fontSize="small" sx={{pb:'5px',color:'white'}} />
-                </Box>
+          <Grid
+            xs={12}
+            md={6}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              // pl:1,
+              justifyContent: "space-between",
+              // padding: 6,
+            }}
+          >
+            <Box sx={{ width: "180px" }}>
+              <Button
+                id="demo-customized-button"
+                aria-controls={open ? "demo-customized-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                variant="text"
+                disableElevation
+                onClick={handleClick}
+                endIcon={<KeyboardArrowDownIcon />}
+                sx={{ color: "white" }}
+              >
+                Products
+              </Button>
+              <StyledMenu
+                id="demo-customized-menu"
+                MenuListProps={{
+                  "aria-labelledby": "demo-customized-button",
+                }}
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                sx={{ ml: 4.7 }}
+              >
+                <MenuItem onClick={handleClose} disableRipple>
+                  Hello
+                </MenuItem>
+                <MenuItem onClick={handleClose} disableRipple>
+                  Hello
+                </MenuItem>
+                <MenuItem onClick={handleClose} disableRipple>
+                  Hello
+                </MenuItem>
+                <MenuItem onClick={handleClose} disableRipple>
+                  Hello
+                </MenuItem>
+                <MenuItem onClick={handleClose} disableRipple>
+                  Hello
+                </MenuItem>
+                <MenuItem onClick={handleClose} disableRipple>
+                  Hello
+                </MenuItem>
+                <MenuItem onClick={handleClose} disableRipple>
+                  Hello
+                </MenuItem>
+              </StyledMenu>
             </Box>
 
             <Link href="/#contact" target="_blank">
               <a>
-                <Typography sx={{ fontSize: "15px", ml: 10, color: "white" }}>
+                <Typography
+                  sx={{
+                    fontSize: "14px",
+                    color: "black",
+                    width: "100px",
+                    color: "white",
+                  }}
+                >
                   CONTACT US
                 </Typography>
               </a>
             </Link>
           </Grid>
 
-          <Grid xs={12} md={6}>
+          <Grid
+            xs={12}
+            md={6}
+            sx={{ width: "120px", display: "flex", alignItems: "center" }}
+          >
             <Box
               sx={{
                 height: "35px",
-                minWidth: "200px",
+                width: {
+                  lg: "490px",
+                  xs: "100%",
+                },
                 borderRadius: "20px",
                 display: "flex",
-                justifyContent: "space-between",
+                margin: {
+                  xs: "20px",
+                  md: "20px",
+                },
               }}
             >
               <input
@@ -78,7 +188,7 @@ const Banner = () => {
 
               <Box
                 sx={{
-                  width: {lg:"39.9%", xs:'50%'},
+                  width: { lg: "39.9%", xs: "55%" },
                   borderRadius: "0 20px 20px 0",
                   background: "lightgrey",
                   display: "flex",
@@ -86,7 +196,7 @@ const Banner = () => {
                   opacity: "0.9",
                   alignItems: "center",
                   height: "100%",
-                  
+                  padding: "0 10px",
                 }}
               >
                 <Box
@@ -94,36 +204,39 @@ const Banner = () => {
                     display: "flex",
                     cursor: "pointer",
                     height: "100%",
-                    width: "70%",
-                    heigh:'100%',
-                    alignItems:'center'
+                    heigh: "100%",
+                    alignItems: "center",
                   }}
                 >
-                  <Typography sx={{ fontSize: {lg: '12px', xs:'10px'}}}>
+                  <Typography
+                    sx={{
+                      fontSize: { lg: "12px", xs: "10px", width: "100px" },
+                    }}
+                  >
                     ALL PRODUCTS
                   </Typography>
                   <KeyboardArrowDownIcon fontSize="small" />
                 </Box>
 
-                <SearchIcon fontSize="small"/>
+                <SearchIcon fontSize="small" />
               </Box>
             </Box>
           </Grid>
         </Grid>
       </Box>
 
-      <Box>
+      <Box sx={{ mb: 2, mt: 4 }}>
         <Grid container spacing={2} columns={12}>
           <Grid xs={12} md={5}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
+                // alignItems: "center",
                 justifyContent: "center",
                 height: "100%",
                 ml: 7,
-                mb: {  xs: '30px' }
+                mb: { xs: "30px" },
               }}
             >
               <Typography>
@@ -141,79 +254,19 @@ const Banner = () => {
               </Typography>
             </Box>
           </Grid>
+
           <Grid
             xs={12}
             md={7}
-            sx={{ display: "flex", justifyContent: "center" }}
+            sx={{ display: "flex", justifyContent: "flex-end" }}
           >
-            <img alt="banner" src="./banner7.jpeg" width="65%" height="auto" style={{borderRadius:'7px'}} />
-          </Grid>
-        </Grid>
-      </Box>
-
-      <Box
-        sx={{
-          background: "#111",
-          // height: {lg:"100px", xs:'130px'},
-          display: "flex",
-          alignItems: "center",
-          padding: {md:"20px 0px", xs:'40px 0 0 0'},
-          mt: { xs:'10px' }
-        }}
-      >
-        <Grid container spacing={2} columns={12}>
-          <Grid xs={12} md={6}>
-            <Box
-              sx={{
-                height: "100%",
-                display: "flex",
-                justifyContent: "center",
-                pt: 2,
-                mb: 2,
-
-              }}
-            >
-              <Button sx={{ color: "#fff", background: "#71797E !important",mb: { xs:'10px' } }}>
-                Featured Products
-              </Button>
-            </Box>
-          </Grid>
-
-          <Grid xs={12} md={6}>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                // transform: "translate(-8px,0)",
-                justifyContent: "flex-end",
-                pr: 8,
-                height: "100%",
-              }}
-            >
-              <Link href="https://www.facebook.com/ActiveMediaIndustries/">
-                <a target="_blank">
-                  <IconButton sx={{ color: "#fff" }}>
-                    <FacebookRoundedIcon />
-                  </IconButton>
-                </a>
-              </Link>
-
-              <Link href="https://www.facebook.com/ActiveMediaIndustries/">
-                <a target="_blank">
-                  <IconButton sx={{ color: "#fff" }}>
-                    <TwitterIcon />
-                  </IconButton>
-                </a>
-              </Link>
-
-              <Link href="https://instagram.com/active_media_industries?utm_medium=copy_link">
-                <a target="_blank">
-                  <IconButton sx={{ color: "#fff" }}>
-                    <InstagramIcon />
-                  </IconButton>
-                </a>
-              </Link>
-            </Box>
+            <img
+              src="./banner7.jpeg"
+              width="65%"
+              height="auto"
+              style={{ borderRadius: "7px", marginRight: 80 }}
+              alt="bannerImg"
+            />
           </Grid>
         </Grid>
       </Box>
