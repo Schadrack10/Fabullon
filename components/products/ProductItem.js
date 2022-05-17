@@ -91,7 +91,7 @@ export default function ProductItem({
         >
           <Box sx={{ width: '100%', height: '15%', background: '#f9b33a', borderRadius: '10px 10px 0 0', display: 'flex', justifyContent: "flex-end" }} x>
             <Button onClick={handleOpen}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 16 16">
                 <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
               </svg>
             </Button>
