@@ -231,7 +231,9 @@ const Banner = () => {
             <Box
               sx={{
                 display: "flex",
+                border:'1px solid red',
                 flexDirection: "column",
+                padding:'0 20px',
                 // alignItems: "center",
                 justifyContent: "center",
                 height: "100%",
@@ -239,7 +241,7 @@ const Banner = () => {
                 mb: { xs: "30px" },
               }}
             >
-              <Typography>
+              <Typography variant="h6">
                 <span style={{ fontSize: "49px", fontWeight: "700" }}>
                   Turning Your
                 </span>
