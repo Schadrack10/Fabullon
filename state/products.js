@@ -6,7 +6,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+  
      
     ],
   },
@@ -17,7 +17,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+    
     ],
   },
   {
@@ -27,7 +27,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+  
     ],
   },
   {
@@ -37,7 +37,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+    
     ],
   },
   {
@@ -47,7 +47,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+    
     ],
   },
   {
@@ -57,7 +57,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+    
     ],
   },
   {
@@ -67,7 +67,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+ 
     ],
   },
   {
@@ -77,7 +77,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+    
     ],
   },
   {
@@ -87,7 +87,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+     
     ],
   },
   {
@@ -97,7 +97,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+    
     ],
   },
   {
@@ -107,7 +107,7 @@ export const productsArr = [
     description: [
       "Durable",
       "Affordable",
-      "Spare Lenses available",
+    
     ],
   },
   {
