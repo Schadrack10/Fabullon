@@ -74,3 +74,28 @@ font-size: 31px !important;
 .swiper-pagination{
   padding: 0px 0px 10px 0px;
 }
+
+.dropdown{
+  z-index: 20 !important;
+  position: absolute;
+  left: 0;
+  background: white;
+}
+
+.dropdown-content{
+  width: 200px;
+}
+
+.dropdown ul li{
+  list-style-type: none;
+  margin-bottom: 2px;
+  background: #000;
+  color: white;
+  padding: 5px 0 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown ul li:hover{
+  background: #f9b33a;
+}

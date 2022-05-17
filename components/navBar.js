@@ -141,7 +141,7 @@ const SmallScreenNavBar = () => {
         }}
       >
         <Link href="/">
-          <a
+        <img
             style={{
               width: "100%",
               height: "100%",
@@ -149,9 +149,8 @@ const SmallScreenNavBar = () => {
               alignItems: "center",
               justifyContent: "center",
             }}
-          >
-            LOGO
-          </a>
+            src="logo.png"
+          />
         </Link>
       </Box>
 
