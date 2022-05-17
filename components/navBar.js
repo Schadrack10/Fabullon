@@ -64,6 +64,7 @@ const WideScreenNavbar = () => {
       >
         <Link href="/">
           <img
+           alt="logo"
             style={{
               width: "100%",
               height: "100%",

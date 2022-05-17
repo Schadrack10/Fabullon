@@ -1,6 +1,5 @@
 import { Box, Grid, Typography, Button } from "@mui/material";
 import ProductItem from "./ProductItem";
-import Dialog from "./Dialog";
 import Link from "next/link";
 import { productsArr } from "../../state/products";
 import * as React from "react";
