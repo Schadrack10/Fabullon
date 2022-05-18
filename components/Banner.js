@@ -71,7 +71,11 @@ const Banner = () => {
         justifyContent: "space-between",
         flexDirection: "column",
         // pt: 3, 
-        padding: "0 60px",
+        padding: {
+          md:'0 70px',
+          sm:'0',
+          xs:"0"
+        },
         position: "relative",
         pb: 3,
       }}
@@ -85,8 +89,8 @@ const Banner = () => {
               display: "flex",
               alignItems: "center",
               // pl:1,
-              justifyContent: "space-between",
-              // padding: 6,
+              // justifyContent: "space-between",
+              padding: '0 70px',
             }}
           >
             <Box sx={{ width: "180px" }}>
@@ -156,14 +160,17 @@ const Banner = () => {
           <Grid
             xs={12}
             md={6}
-            sx={{ width: "120px", display: "flex", alignItems: "center", border: '1px solid  red' }}
+            sx={{ width: "120px", display: "flex", alignItems: "center",justifyContent:'flex-start',padding:'0 25px' }}
           >
             <Box
               sx={{
                 height: "35px",
+              
                 width: {
-                  lg: "490px",
+                  lg: "100%",
                   xs: "100%",
+                  md:'100%',
+               
                 },
                 borderRadius: "20px",
                 display: "flex",
@@ -176,19 +183,20 @@ const Banner = () => {
               <input
                 type="search"
                 style={{
-                  width: "100%",
+                  width: "80%",
                   borderRadius: "20px 0 0 20px",
-                  padding: "0 20px",
+                  padding: "0 25px",
                   background: "lightgrey",
                   opacity: "0.9",
                   border: "none",
+                  objectFit:'cover'
                 }}
                 placeholder="Search..."
               />
 
               <Box
                 sx={{
-                  width: { lg: "39.9%", xs: "55%" },
+                  width: { lg: "39.9%", xs: "55%", md:'20%' },
                   borderRadius: "0 20px 20px 0",
                   background: "lightgrey",
                   display: "flex",
@@ -227,32 +235,47 @@ const Banner = () => {
 
       <Box sx={{ mb: 2, mt: 4 }}>
         <Grid container spacing={2} columns={12}>
-          <Grid xs={12} md={6} sx={{ display: "flex", margin: 0, }}>
+          <Grid xs={12} md={6} sx={{ display: "flex", margin: 0,padding:'0 70px' }}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 width: '100%',
-
+                padding:'45px 0',
                 // alignItems: "center",
-                justifyContent: "center",
+                justifyContent: "flex-start",
                 height: "100%",
                 ml: 0,
                 mb: { xs: "30px" },
               }}
             >
-              <Typography align="start">
-                <span style={{ fontSize: "49px", fontWeight: "700", letterSpacing: '2px' }}>
+              {/* <Typography align="start">
+                <span style={{ fontSize: "60px", fontWeight: "800", letterSpacing: '2px', margin:'0' }}>
                   Turning Your
                 </span>
                 <br />
-                <span style={{ fontSize: "35px" }}>Home into paradise</span>
+                <span style={{ fontSize: "45px" }}>Home into paradise</span>
                 <br />
                 <span>Our products are designed</span>
                 <br />
                 <span>to bring comfort and beauty</span>
                 <br />
                 <span>your home</span>
+              </Typography> */}
+              <Typography variant="h1" sx={{fontWeight:'bolder',margin:'10px 0', lineHeight:"60px"}} fontSize="70px">
+              Turning Your
+              </Typography>
+              <Typography variant="h3" sx={{fontWeight:'500',margin:" 2px 10px " }} fontSize="35px">
+              Home into paradise
+              </Typography>
+              <Typography variant="p" sx={{fontWeight:'500',margin:" 2px 10px " }}  fontSize="18px">
+              Our products are designed
+              </Typography>
+              <Typography variant="p" fontSize="18px" sx={{fontWeight:'500',margin:" 2px 10px " }} >
+              to bring comfort and beauty
+              </Typography>
+              <Typography variant="p" fontSize="18px"  sx={{fontWeight:'500',margin:" 2px 10px " }} >
+              your home
               </Typography>
             </Box>
           </Grid>
@@ -260,7 +283,7 @@ const Banner = () => {
           <Grid
             xs={12}
             md={6}
-            sx={{ display: "flex", justifyContent: "start", }}
+            sx={{ display: "flex", justifyContent: "start",padding:'0 50px' }}
           >
             <img
               src="./banner7.jpeg"
