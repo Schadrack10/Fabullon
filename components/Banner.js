@@ -73,7 +73,7 @@ const Banner = () => {
         flexDirection: "column",
         // pt: 3, 
         padding: {
-          md:'0 70px',
+          md:'0 70px 40px 70px',
           sm:'0',
           xs:"0"
         },
