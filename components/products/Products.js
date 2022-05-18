@@ -70,6 +70,7 @@ export default function Products() {
                 "&:hover": {
                   color: "#ef8729",
                 },
+                borderRadius:'0'
               }}
             >
               MORE PRODUCTS

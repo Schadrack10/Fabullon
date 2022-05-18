@@ -4,7 +4,9 @@ import TextField from "@mui/material/TextField";
 import SendIcon from "@mui/icons-material/Send";
 import { useSnackbar } from "notistack";
 import axios from "axios";
-import { GooSpinner } from "react-spinners-kit";
+import Link from "next/link";
+
+
 
 const ContactUs = () => {
   const minWidth600px = useMediaQuery("(min-width:600px)");
@@ -28,6 +30,7 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsProcessing(true);
+    console.log('hello')
 
     const formValues = Object.values(form);
 
@@ -59,6 +62,7 @@ const ContactUs = () => {
 
             setIsProcessing(false);
           } else {
+            console.log('msg')
             enqueueSnackbar(`Failed to send email : ${res.data.err.message}`, {
               variant: "error",
             });
@@ -67,6 +71,7 @@ const ContactUs = () => {
           }
         })
         .catch((err) => {
+          console.log("we trying to catch the error")
           enqueueSnackbar(`Failed to send email : ${err.message}`, {
             variant: "error",
           });
@@ -126,9 +131,9 @@ const ContactUs = () => {
               <br />
               0610 333 003
             </Typography>
-
-
-            <Button
+              <Link href="https://www.google.com/maps/place/26a+Loveday+St,+Selby+South,+Johannesburg,+2000/@-26.2160634,28.0398166,17z/data=!3m1!4b1!4m5!3m4!1s0x1e950ebe1d7da421:0x1ea4522b95b834fe!8m2!3d-26.2160634!4d28.0420053?hl=en-US">
+                <a target="_blank">
+                <Button
                 sx={{
                   background: "#f9b33a !important",
                   borderRadius: 0,
@@ -136,8 +141,6 @@ const ContactUs = () => {
                   mt: 4,
                   pr: 2,
                   color: "#fff",
-                  // pointerEvents: processing ? "none" : "auto",
-                  // opacity: processing ? 0.8 : 1,
                   height: "38px",
                   width: "132px",
                 }}
@@ -146,6 +149,8 @@ const ContactUs = () => {
               >
                  VIEW MAP
               </Button>
+                </a>
+              </Link>
           </Box>
         </Grid>
 
@@ -182,7 +187,6 @@ const ContactUs = () => {
                 <TextField
                   label="Email address"
                   fullWidth
-                //   variant="standard"
                   type="email"
                   name="email"
                   onChange={handleFieldChange}
@@ -194,7 +198,6 @@ const ContactUs = () => {
                 <TextField
                   label="Contact number"
                   fullWidth
-                //   variant="standard"
                   type="tel"
                   name="number"
                   onChange={handleFieldChange}
@@ -204,13 +207,10 @@ const ContactUs = () => {
                 <br />
 
                 <TextField
-                    id="standard-textarea"
                     placeholder="Description"
                     multiline
-                    // variant="standard"
                     fullWidth
                     rows={5}
-                    autoFocus={true}
                     name="query"
                     onChange={handleFieldChange}
                     value={form.query}
@@ -220,7 +220,7 @@ const ContactUs = () => {
               <Box sx={{mt:4,display:'flex',justifyContent:'flex-end'}}>
               <Button
                 sx={{
-                  background: "#111 !important",
+                  background: "#f9b33a !important",
                   borderRadius: 0,
                   paddingLeft: "24px",
                 //   mt: 4,
@@ -239,7 +239,6 @@ const ContactUs = () => {
                   <>
                     SENDING
                     <Box sx={{ ml: 1 }}>
-                      {/* <GooSpinner size={30} color="#fff" loading={true} /> */}
                     </Box>
                   </>
                 ) : (
