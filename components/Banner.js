@@ -66,6 +66,7 @@ const Banner = () => {
       sx={{
         background: "#f9b33a",
         width: "100%",
+        minHeight:'70vh',
         mt: 8.7,
         display: "flex",
         justifyContent: "space-between",
