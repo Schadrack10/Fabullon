@@ -156,7 +156,7 @@ const Banner = () => {
           <Grid
             xs={12}
             md={6}
-            sx={{ width: "120px", display: "flex", alignItems: "center" }}
+            sx={{ width: "120px", display: "flex", alignItems: "center", border: '1px solid  red' }}
           >
             <Box
               sx={{
@@ -176,7 +176,7 @@ const Banner = () => {
               <input
                 type="search"
                 style={{
-                  width: "60%",
+                  width: "100%",
                   borderRadius: "20px 0 0 20px",
                   padding: "0 20px",
                   background: "lightgrey",
@@ -227,22 +227,22 @@ const Banner = () => {
 
       <Box sx={{ mb: 2, mt: 4 }}>
         <Grid container spacing={2} columns={12}>
-          <Grid xs={12} md={5}>
+          <Grid xs={12} md={6} sx={{ display: "flex", margin: 0, }}>
             <Box
               sx={{
                 display: "flex",
-                border:'1px solid red',
                 flexDirection: "column",
-                padding:'0 20px',
+                width: '100%',
+
                 // alignItems: "center",
                 justifyContent: "center",
                 height: "100%",
-                ml: 7,
+                ml: 0,
                 mb: { xs: "30px" },
               }}
             >
-              <Typography variant="h6">
-                <span style={{ fontSize: "49px", fontWeight: "700" }}>
+              <Typography align="start">
+                <span style={{ fontSize: "49px", fontWeight: "700", letterSpacing: '2px' }}>
                   Turning Your
                 </span>
                 <br />
@@ -259,15 +259,15 @@ const Banner = () => {
 
           <Grid
             xs={12}
-            md={7}
-            sx={{ display: "flex", justifyContent: "flex-end" }}
+            md={6}
+            sx={{ display: "flex", justifyContent: "start", }}
           >
             <img
               src="./banner7.jpeg"
-              width="65%"
-              height="auto"
-              style={{ borderRadius: "7px", marginRight: 80 }}
-              alt="bannerImg"
+              width="100%"
+               height='auto'
+            style={{ borderRadius: "7px", marginRight: 80 }}
+            alt="bannerImg"
             />
           </Grid>
         </Grid>
