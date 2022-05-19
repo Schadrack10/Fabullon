@@ -278,6 +278,11 @@ const Banner = () => {
               <Typography variant="p" fontSize="18px"  sx={{fontWeight:'500',margin:" 2px 10px " }} >
               your home
               </Typography>
+              <Box sx={{padding:"20px 0"}}>
+                 <Button href="/#about" sx={{background:'#000','&:hover':{background:'#222'},padding:2}} variant="contained">
+                     <Typography variant="h6">for more</Typography>
+                 </Button>
+              </Box>
             </Box>
           </Grid>
 
