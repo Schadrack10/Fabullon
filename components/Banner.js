@@ -63,7 +63,7 @@ const Banner = () => {
   // 
   const [content, setContent] = useState([
     {
-      id: 1,
+      id: 0,
       name: 'Procucts of your choice',
       price: 'Display Price',
       description: 'Affordable and Durabale',
@@ -86,7 +86,7 @@ const Banner = () => {
         break;
       case 'table':
         setContent([{
-          id: 1,
+          id: 2,
           name: 'Table',
           price: '$20.99',
           description: 'Affordable and Durabale Table Available',
@@ -95,7 +95,7 @@ const Banner = () => {
         break;
       case 'cupboard':
         setContent([{
-          id: 1,
+          id: 3,
           name: 'CupBoard',
           price: '$20.99',
           description: 'Affordable and Durabale cupboard Available',
@@ -105,7 +105,7 @@ const Banner = () => {
         break;
       case 'bed':
         setContent([{
-          id: 1,
+          id: 4,
           name: 'Bed',
           price: '$147.99',
           description: 'Comfortable and Durabale Bed Available',
@@ -202,7 +202,7 @@ const Banner = () => {
                   </Box>
                   <Box sx={{ width: '80%', height: '100%', border: '3px solid #f9b33a', padding: "10px" }}>
                     {content.map(item => (
-                      <Box>
+                      <Box key={item.id}>
                         <h1>{item.name}</h1>
                         <p>{item.description}</p>
                         <p>{item.color}</p>
