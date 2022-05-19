@@ -67,53 +67,53 @@ const Banner = () => {
       name: 'Procucts of your choice',
       price: 'Display Price',
       description: 'Affordable and Durabale',
-      color:'Colour Available'
+      color: 'Colour Available'
     },
   ])
 
 
   const changeContent = (product) => {
+    switch (product) {
+      case 'chair':
+        setContent([{
+          id: 1,
+          name: 'Chairs',
+          price: '$11.99',
+          description: 'Affordable and Durabale chairs Available',
+          color: 'All color available'
 
-  if(product == 'chair'){
-    setContent([{
-      id: 1,
-      name: 'Chairs',
-      price: '$11.99',
-      description: 'Affordable and Durabale chairs Available',
-      color:'All color available'
+        }]);
+        break;
+      case 'table':
+        setContent([{
+          id: 1,
+          name: 'Table',
+          price: '$20.99',
+          description: 'Affordable and Durabale Table Available',
+          color: 'All color available'
+        }])
+        break;
+      case 'cupboard':
+        setContent([{
+          id: 1,
+          name: 'CupBoard',
+          price: '$20.99',
+          description: 'Affordable and Durabale cupboard Available',
+          color: 'Black and white',
 
-    }])
-  }
-    if(product == 'table'){
-    setContent([{
-      id: 1,
-      name: 'Table',
-      price: '$20.99',
-      description: 'Affordable and Durabale Table Available',
-      color:'All color available'
-    }])
-   }
-   if(product == 'cupboard'){
-    setContent([{
-      id: 1,
-      name: 'CupBoard',
-      price: '$20.99',
-      description: 'Affordable and Durabale cupboard Available',
-      color:'Black and white',
-      
-    }])
-   }
-   if(product == 'bed'){
-    setContent([{
-      id: 1,
-      name: 'Bed',
-      price: '$147.99',
-      description: 'Comfortable and Durabale Bed Available',
-      color:'Black and white',
-      
-    }])
-   }
- 
+        }])
+        break;
+      case 'bed':
+        setContent([{
+          id: 1,
+          name: 'Bed',
+          price: '$147.99',
+          description: 'Comfortable and Durabale Bed Available',
+          color: 'Black and white',
+        }])
+        break;
+    }
+
   }
 
 
@@ -187,16 +187,16 @@ const Banner = () => {
                 <Box sx={{ height: '500px', background: '', display: 'flex' }}>
 
                   <Box sx={{ width: '20%', height: '100%', border: '3px solid #f9b33a' }}>
-                    <MenuItem onClick={()=>changeContent('chair')} disableRipple>
+                    <MenuItem onClick={() => changeContent('chair')} disableRipple>
                       <h3>Chair</h3>
                     </MenuItem>
-                    <MenuItem onClick={()=>changeContent('table')} disableRipple>
+                    <MenuItem onClick={() => changeContent('table')} disableRipple>
                       <h3>Table</h3>
                     </MenuItem>
-                    <MenuItem onClick={()=>changeContent('cupboard')} disableRipple>
+                    <MenuItem onClick={() => changeContent('cupboard')} disableRipple>
                       <h3>Cupboard</h3>
                     </MenuItem>
-                    <MenuItem onClick={()=>changeContent('bed')} disableRipple>
+                    <MenuItem onClick={() => changeContent('bed')} disableRipple>
                       <h3>Bed</h3>
                     </MenuItem>
                   </Box>
