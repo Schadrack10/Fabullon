@@ -365,10 +365,10 @@ const Banner = () => {
             sx={{ display: "flex", justifyContent: "start", padding: '0 50px' }}
           >
             <img
-              src="./banner7.jpeg"
+              src="home.png"
               width="100%"
               height='auto'
-              style={{ borderRadius: "7px", marginRight: 80 }}
+              style={{ borderRadius: "7px", marginRight: 80 , objectFit:'cover'   }}
               alt="bannerImg"
             />
           </Grid>
