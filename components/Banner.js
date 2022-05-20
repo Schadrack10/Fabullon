@@ -260,7 +260,7 @@ const Banner = () => {
                   width: "80%",
                   borderRadius: "20px 0 0 20px",
                   padding: "0 25px",
-                  background: "lightgrey",
+                  background: "#f8f8f8",
                   opacity: "0.9",
                   border: "none",
                   objectFit: 'cover'
