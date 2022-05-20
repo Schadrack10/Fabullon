@@ -260,7 +260,7 @@ const Banner = () => {
                   width: "80%",
                   borderRadius: "20px 0 0 20px",
                   padding: "0 25px",
-                  background: "#f8f8f8",
+                  background: "#fff",
                   opacity: "0.9",
                   border: "none",
                   objectFit: 'cover'
@@ -272,7 +272,7 @@ const Banner = () => {
                 sx={{
                   width: { lg: "39.9%", xs: "55%", md: '20%' },
                   borderRadius: "0 20px 20px 0",
-                  background: "lightgrey",
+                  background: "#fff",
                   display: "flex",
                   justifyContent: "space-around",
                   opacity: "0.9",
