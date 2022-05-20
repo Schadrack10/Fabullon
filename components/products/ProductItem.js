@@ -28,7 +28,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: {
-    xs: "80%",
+    xs: "50%",
   },
 
   maxwidth: {
@@ -38,13 +38,14 @@ const style = {
     xs: '1px'
   },
   maxHeight: {
+  
     xs: '450px',
     lg: 'auto'
   },
   bgcolor: "#fff",
   boxShadow: 24,
-  borderRadius: '20px',
-  p: 4,
+  borderRadius: '12px',
+  p: 2,
 };
 
 export default function ProductItem({
@@ -172,7 +173,7 @@ export default function ProductItem({
                     src={currentImg}
                     style={{
                       objectFit: "contain",
-                      minWidth: "100px",
+                      maxWidth: "200px",
                       maxHeight: "80vh",
                       margin:'20px 0'
                     }}

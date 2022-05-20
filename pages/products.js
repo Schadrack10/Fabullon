@@ -47,8 +47,9 @@ export default function Products() {
 
       <Box
         sx={{
+          width:'800px',
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent:"",
           alignItems: "center",
           p: {
             lg: "0px 24px",
@@ -57,13 +58,16 @@ export default function Products() {
           },
         }}
       >
-        <Typography fontSize={25} variant="h2\5">Filter by :</Typography>
-        <Select  value={filterChoice} onChange={handleFilterChange}>
-          <MenuItem  value="">{"All"}</MenuItem>
+        <Typography sx={{margin:'0 10px'}} fontSize={25} variant="h2\5">Filter by :</Typography>
+        <Box sx={{width:'300px', margin:"0 20px"}}>
+        <Select color="warning" sx={{width:'300px', height:"40px"}}  value={filterChoice} onChange={handleFilterChange}>
+          <MenuItem   value="">{"All"}</MenuItem>
           {Catergories.map((cat, index) => {
             return <MenuItem key={index} value={cat}>{cat}</MenuItem>;
           })}
         </Select>
+
+        </Box>
       </Box>
 
       <Box
