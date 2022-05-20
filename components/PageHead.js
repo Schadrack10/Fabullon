@@ -9,7 +9,7 @@ const PageHead = () => {
       <link rel="icon" href="/favicon.ico" />
       {/* <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" /> */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.gstatic.com"  />
       <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Barlow+Condensed&family=Courgette&family=Lato:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet"></link>
     </Head>
   );
